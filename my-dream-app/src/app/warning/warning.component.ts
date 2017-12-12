@@ -9,13 +9,14 @@ export class WarningComponent {
     title = 'this is a warning, be aware';
     warningId: number = 10;
     warningStatus: string = 'low-warning'
+    serverCreated = false;
 
     getWarning() {
         return this.warningStatus;
     }
 
     allowNewServer = false;
-    serverCreationStatus = 'No Server was created'
+    // serverCreationStatus = 'No Server was created'
 
     constructor() { 
     setTimeout(() => {
@@ -28,7 +29,8 @@ export class WarningComponent {
     }
 
     onCreateServer() {
-        this.serverCreationStatus = 'server was created';
+        this.serverCreated = true;
+        // this.serverCreationStatus = 'server was created';
     }
 }
 
