@@ -10,6 +10,8 @@ export class WarningComponent {
     warningId: number = 10;
     warningStatus: string = 'low-warning'
     serverCreated = false;
+    serverStatus: string = 'offline';
+
 
     getWarning() {
         return this.warningStatus;
@@ -22,6 +24,15 @@ export class WarningComponent {
     setTimeout(() => {
         this.allowNewServer = true;
     }, 2000);
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+    }
+
+    getServerStatus() {
+        return this.serverStatus;
+    }
+
+    getColor() {
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 
     ngOnInit() {

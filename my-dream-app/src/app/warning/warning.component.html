@@ -17,3 +17,5 @@ class="btn btn-primary"
 <p>No server was created </p>
 </ng-template>
 </div>
+
+<p [ngStyle]="{ backgroundColor: getColor() }">{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
