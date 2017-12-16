@@ -5,22 +5,26 @@
   </h1>
   <img width="300" src="https://i.pinimg.com/originals/fe/f9/ed/fef9edbc7037e52a6338689145d1f21a.jpg">
   <app-the-warning></app-the-warning>
-  <servers></servers>
+  <servers*ngFor="let server of servers"></servers>
  
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
 <label>Username</label>
-
-<input type="text" class="form-control" [(ngModel)]="username">
+  <input type="text"
+    class="form-control" 
+    [(ngModel)]="username">
 <p>{{ username }}</p>
+
 <button class="btn btn-primary" 
 [disabled]="username === ''"
-(click)="username = ''">Reset User</button>
+(click)="username = ''">
+Reset User</button>
 
+    </div>
+  </div>
 </div>
-</div>
-</div>
+
 
 
 

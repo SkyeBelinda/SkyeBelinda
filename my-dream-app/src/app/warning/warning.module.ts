@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { WarningComponent } from './warning.component';
 
+
 @NgModule({
     declarations: [
         WarningComponent
