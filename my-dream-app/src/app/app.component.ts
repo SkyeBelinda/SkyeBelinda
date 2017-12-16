@@ -12,11 +12,19 @@ export class AppComponent {
   displayCondition = false;
   elementArray = 0;
   arrayNumbers = [];
+  showSecret = false;
+  log = [];
 
 onDisplay() {
   this.displayCondition = !this.displayCondition;
   this.elementArray += 1;
   this.arrayNumbers.push(this.elementArray);
+}
+
+onToggleDisplay() {
+  this.showSecret = !this.showSecret;
+  this.log.push(this.log.length + 1)
+  
 }
 
 getColor(p) {
