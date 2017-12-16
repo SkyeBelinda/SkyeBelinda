@@ -6,6 +6,7 @@ import { OnInit } from '@angular/core';
 import { AppComponent } from './app.component';
 import { WarningComponent } from './warning/warning.component';
 import { ServersComponent } from './servers/servers.component'
+import { CommonModule } from '@angular/common/src/common_module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { ServersComponent } from './servers/servers.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
