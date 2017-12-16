@@ -25,6 +25,19 @@ Reset User</button>
   </div>
 </div>
 
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" 
+      (click)="onDisplay()">Display Details</button>
+      <p *ngIf="displayCondition">Secret Password = tuna</p>
+        <p *ngFor="let myNumber of arrayNumbers" [ngStyle]="{backgroundColor:getColor(myNumber)}">
+      </p>
+    </div>
+  </div>
+</div>
+
 
 
 
