@@ -14,10 +14,6 @@ export class ServersComponent implements OnInit {
     serverId = '11';
     servers = ['Testserver', 'Testerserver 2'];
     serverCreated = false;
-    showDetails = false;
-    detailsBelow = 'no details to show';
-    detailsName = 'popcorn'
-
 
 constructor() {
     setTimeout(() => {
@@ -47,10 +43,4 @@ onCreateServer() {
 onUpdateServerName() {
     this.serverName = (<HTMLInputElement>event.target).value;
 }
-
-onDisplayDetails() {
-    this.showDetails = true;
-    this.detailsBelow = 'this is the secret message you get for clicking on the button ' + this.detailsName
 }
-}
-

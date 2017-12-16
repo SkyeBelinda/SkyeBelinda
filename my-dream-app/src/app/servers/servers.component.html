@@ -22,10 +22,3 @@ class="btn btn-primary"
 <p [ngStyle]="{ backgroundColor: getColor() }" [ngClass]="{online: serverStatus === 'online'}">
     {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
 </p>
-
-
-
-<button class = "btn btn-primary"
-[disabled] = "!showdetails"
-(click)="onDisplayDetails()">Show Details</button>
-<p>{{ detailsBelow }}</p>
