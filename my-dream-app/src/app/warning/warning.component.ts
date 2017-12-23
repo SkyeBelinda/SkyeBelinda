@@ -15,4 +15,8 @@ export class WarningComponent {
     getWarning() {
         return this.warningStatus;
     }
+
+    getTitle() {
+        return this.title;
+    }
 }
